@@ -1,0 +1,6 @@
+#!/bin/bash
+export AVRO_PATH=~/.vendor/avro-tools*
+rm track_user.avro
+ls
+java -jar $AVRO_PATH fromjson --schema-file track_user.avsc track_user.json > track_user.avro
+java -jar $AVRO_PATH tojson track_user.avro

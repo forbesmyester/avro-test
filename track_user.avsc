@@ -1,0 +1,22 @@
+{
+    "type" : "record",
+    "name" : "track_user",
+    "fields" : [
+        {
+            "name" : "time",
+            "type": { "type":"string", "logicalType":"timestamp-millis"},
+            "doc"  : "Time in ISO-8601"
+        },
+        {
+            "name" : "user",
+            "type" : "string",
+            "doc"  : "The user ID"
+        },
+        {
+            "name" : "url",
+            "type" : "string",
+            "doc"  : "The URL visited"
+        }
+    ],
+    "doc:" : "A schema for tracking users"
+}
